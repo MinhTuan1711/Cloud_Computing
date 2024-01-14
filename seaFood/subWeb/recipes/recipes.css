@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    width: 1000px;
+}
+
+/* start nav-info */
+#header{
+    width: 100%;
+    background-color: #2c3941;
+}
+#header .nav-info .col{
+    text-align: center;
+    background-clip: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .nav-info img{
+    width: 100%; 
+    height: 100%;
+    padding: 12px;
+}
+
+#header .nav-info span, i{
+    color: #ccc;
+    text-align: justify;
+    padding-left: 12px;
+}
+
+/* start nav */
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    top: 0;
+    height: 70px;
+}
+
+#nav .item a{
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    padding: 24px 40px;
+}
+
+#nav .item:hover a{
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+#nav.theme {
+    background-image: url("/img/content/theme1.jpg");
+    background-color: transparent; 
+    transition:  0.3s ease-in-out; 
+}
+/* start slide */
+#slide{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 30%;
+    background-image: url('/subWeb/img/slide-main.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#slide .slide__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+
+/*.c__wrapper */
+#content .c__wrapper{
+    margin-bottom: 100px;
+}
+
+#content .c__wrapper .c__title{
+    padding: 64px 0;
+    width: 100%;
+    text-align: center;
+}
+#content .c__title h6{
+    color: #bf5025;
+    font-family: Brush Script MT;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+#content .c__title h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+/* 1.cookbook */
+#content .c__cbook-col{
+    padding-bottom: 52px;
+}
+#content .c__cbook-col img {
+    width: 100%;
+    height: auto;
+}
+
+#content .animation{
+    position: relative;
+}
+
+#content .animation:hover {
+    /* background-color: #8bb4cd; */
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+#content .animation i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+}
+#content .animation:hover i{
+    opacity: 1;
+    cursor: pointer;
+}
+#content .c__cbook-content{
+    text-align: center;
+}
+#content .c__cbook-content h5{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 24px 0 16px
+}
+#content .c__cbook-content h5:hover{
+    color: #bf5025;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+#content .c__cbook-content p{
+    color: #959ca0;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+#content .c__cbook-content button{
+    background-color: #2c3941;
+    padding: 14px 32px;
+    width: 150px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+
+#content .c__cbook-content button:hover{
+    background-color: #8bb4cd;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* 2.video recipes */
+#content .c__recipes{
+    position: relative;
+    background-image: url('/subWeb/img/recipes-theme.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    margin: -50px 0 0;
+    
+}
+#content .c__recipes h2{
+    color: #fff;
+}
+#content .c__reci-video{
+    position: absolute;
+    inset: 25% 30%;
+} 
+#content .c__reci-video iframe{
+    width: 500px;
+    height: 300px;
+}
+#content .c__reci-decs{
+    position: absolute;
+    bottom: 20px;
+    inset: 70% 30%;
+    text-align: center;
+}
+#content .c__reci-decs p{
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+#content .c__reci-decs button{
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    margin-top: 32px;
+    width: 210px;
+    letter-spacing: 1px;
+    color: #2c3941;
+}
+
+#content .c__reci-decs button:hover{
+    color: #fff;
+    background-color: #bf5025;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+/* start footer */
+#footer{
+    width: 100%;
+    height: 350px;
+    background-color: #2c3941;
+}
+
+#footer .f__content{
+    padding-top: 5%;
+    color: #959ca0;
+}
+#footer .f__col-img{
+    margin-top: 24px;
+}
+#footer .f__content h5{
+    color: #fff;
+    text-transform:uppercase;
+    font-size:16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+#footer .f__content p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+#footer .f__content a{
+    text-decoration: none;
+    color: #959ca0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+#footer .f__content a:hover{
+    color: #fff;
+}
+
+#footer .f__col-contact a{
+    color:#8bb4cd;
+}
+
+#footer .f__col-contact a:hover{
+    color: #bf5025;
+}
+
+#footer .f__col-links{
+    margin-left: 35%;
+}
+#footer .f__copyright p{
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 14px;
+    color: #959ca0;
+    letter-spacing: 0.5px;
+}
+
+#footer .f__copyright p>a{
+    color: #8bb4cd;
+}
+#footer .f__copyright p>a:hover{
+    color: #bf5025;
+}

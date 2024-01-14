@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+#wrapper{
+    width: 1000px;
+}
+
+/* start nav-info */
+#header{
+    width: 100%;
+    background-color: #2c3941;
+}
+#header .nav-info .col{
+    text-align: center;
+    background-clip: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .nav-info img{
+    width: 100%; 
+    height: 100%;
+    padding: 12px;
+}
+
+#header .nav-info span, i{
+    color: #ccc;
+    text-align: justify;
+    padding-left: 12px;
+}
+
+/* start nav */
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    top: 0;
+    height: 70px;
+}
+
+#nav .item a{
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    padding: 24px 40px;
+}
+
+#nav .item:hover a{
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+#nav.theme {
+    background-image: url("/img/content/theme1.jpg");
+    background-color: transparent; 
+    transition:  0.3s ease-in-out; 
+}
+/* start slide */
+#slide{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 30%;
+    background-image: url('/subWeb/img/slide-main.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#slide .slide__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+/* start content  */
+#content{
+    padding-bottom: 100px;
+}
+
+/* c__shop-taskbar */
+#content .c__shop-taskbar{
+    width: 100%;
+    height: 200px;
+}
+
+#content .c__shop-taskbar .box1,.box2,.box3,.box4{
+    background-color: #e4e7e8;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    padding: 54px 40px 40px;
+    font-size: 14px;
+    color: #959ca0;
+}
+
+#content .c__shop-taskbar h5{
+    color: #2c3941;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+#content .c__shop-taskbar .box2 h5{
+    border-bottom: 3px solid #8bb4cd;
+    padding-bottom: 24px;
+}
+
+#content .c__shop-taskbar .box2 span{
+    float: right;
+}
+#content .c__shop-taskbar .box2 button{
+    border: none;
+    padding: 14px 26px 16px;
+    background-color: #2c3941;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 12px 0 0 48px;
+    width: 70%;
+}
+#content .c__shop-taskbar .box2 button:hover{
+    background-color: #8bb4cd;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#content .c__shop-taskbar .box3 ul{
+    padding-left: 14px;
+}
+#content .c__shop-taskbar .box3 ul>li{
+    margin-bottom: 12px;
+    list-style-type: disc;
+}
+#content .c__shop-taskbar .box3 ul>li:hover{
+    color: #bf5025;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+#content .c__shop-taskbar .box4 button{
+    border: none;
+    padding: 6px;
+    background-color: #fff;
+    color: #959ca0;
+    margin: 0 5px 5px 0;
+}
+#content .c__shop-taskbar .box4 button:hover{
+    background-color: #8bb4cd;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* c__shop-content */
+#content .nav-top{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 32px;
+}
+#content .nav-top i{
+    font-size: 30px;
+    color: #8bb4cd;
+    margin-right: 16px;
+}
+
+#content .nav-top p{
+    text-align: center;
+    line-height: 30px;
+    color: #959ca0;
+    font-size: 14px;
+}
+
+#content .nav-top form>select{
+    width: 200px;
+    height: 40px;
+    color: #959ca0;
+    border: 2px solid #e4e7e8;
+    position: absolute;
+    right: 0;
+}
+
+#content .nav-top form>select:hover{
+    border-color: #8bb4cd;
+    transition: all 0.2s ease-in-out;
+}
+
+#content .c__shop-row{
+    padding-top: 84px;
+}
+#content .c__shop-col{
+    padding-bottom: 24px;
+    position: relative;
+}
+#content .c__shop-content img{
+    width: 100%;
+    height: auto;
+}
+
+#content .c__shop-content img:hover{
+    /* opacity: 0.3; */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#content .c__shop-col button{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    padding: 14px;
+    text-align: center;
+    background-color: #2c3941;
+    color: #fff;
+    text-transform: uppercase;
+    width: 70%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+#content .c__shop-content .animation:hover .btn{
+    top: 20%;
+    opacity: 1;
+}
+
+#content .c__shop-col button:hover{
+    background-color: #8bb4cd;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#content .c__shop-content .box-content{
+    text-align: center;
+    padding: 21px 0 28px;
+    color: #959ca0;
+}
+
+#content .c__shop-content h3{
+    margin-bottom: 20px;
+    color: #2c3941;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#content .c__shop-content h3:hover{
+    color: #bf5025;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+/* start footer */
+#footer{
+    width: 100%;
+    height: 350px;
+    background-color: #2c3941;
+}
+
+#footer .f__content{
+    padding-top: 5%;
+    color: #959ca0;
+}
+#footer .f__col-img{
+    margin-top: 24px;
+}
+#footer .f__content h5{
+    color: #fff;
+    text-transform:uppercase;
+    font-size:16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+#footer .f__content p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+#footer .f__content a{
+    text-decoration: none;
+    color: #959ca0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+#footer .f__content a:hover{
+    color: #fff;
+}
+
+#footer .f__col-contact a{
+    color:#8bb4cd;
+}
+
+#footer .f__col-contact a:hover{
+    color: #bf5025;
+}
+
+#footer .f__col-links{
+    margin-left: 35%;
+}
+#footer .f__copyright p{
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 14px;
+    color: #959ca0;
+    letter-spacing: 0.5px;
+}
+
+#footer .f__copyright p>a{
+    color: #8bb4cd;
+}
+#footer .f__copyright p>a:hover{
+    color: #bf5025;
+}
+

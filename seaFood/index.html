@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/gird.css">
+    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="header">
+        <!-- start nav-info -->
+        <div class="nav-info grid wide"> 
+            <div class="row no-gutters">
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>775 Avenue
+                        <br>
+                        Brooklyn, NY
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call us
+                        <br>
+                        (800) 123-4567
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <img src="./img/logo/logo7.webp" alt="logo">
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Login
+                        <br>
+                        Register
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Your cart
+                        <br>
+                        $0.00
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start nav  -->
+    <div id ="nav">
+        <div class="item">
+            <a href="#">HOME</a>
+        </div>
+        <div class="item">
+            <a href="./subWeb/featured/featured.html">FEATURES</a>
+        </div>
+        <div class="item">
+            <a href="./subWeb/recipes/recipes.html">RECIPES</a>
+        </div>
+        <div class="item">
+            <a href="./subWeb/product/product.html">PRODUCT</a>
+        </div>
+        <div class="item">
+            <a href="./subWeb/contact/contact.html">CONTACTS</a>
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+        const initialNavHeight = nav.clientHeight;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > initialNavHeight) {
+                nav.classList.add('theme');
+            } else {
+                nav.classList.remove('theme');
+            }
+        });
+    </script>
+
+    
+    <!-- start slide -->
+
+    <div id="slide">
+        <div class="slide__images">
+            <img id="img" onclick="changeImage()" src="./img/slide/slide1.jpg" alt="">
+        </div>
+        <div class="slide__text">
+            <h1>THE WONDERS OF THE OCEAN</h1>
+            <p>ON YOUR PLACE</p>
+        </div>
+    </div>
+
+    <script>
+        var index = 1;
+        changeImage = function() {
+            var imgs = ["./img/slide/slide1.jpg", "./img/slide/slide6.jpg","./img/slide/slide3.jpg","./img/slide/slide8.jpg"];
+            document.getElementById('img').src = imgs[index];
+            index++;
+            if(index == 4){
+                index = 0;
+            }
+        }
+        setInterval(changeImage,8000);
+    </script>
+
+    
+    <!-- start content -->
+    <div id="content">
+        <div class="c__intro grid wide">
+            <div class="c__row-intro row">
+                <div class="col l-3">
+                    <div class="wrap">
+                        <img src="./img/content/img1.jpg" alt="img1">
+                        <div class="c__text">
+                            <h2>LEADER</h2>
+                            <P>Seafood</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="wrap">
+                        <img src="./img/content/img2.jpg" alt="img2">
+                        <div class="c__text">
+                            <h2>PARTNER</h2>
+                            <P>Sustainable</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="wrap">
+                        <img src="./img/content/img3.jpg" alt="img3">
+                        <div class="c__text">
+                            <h2>PRODUCT</h2>
+                            <P>World Class</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="wrap">
+                        <img src="./img/content/img4.jpg" alt="img4">
+                        <div class="c__text">
+                            <h2>QUALITY</h2>
+                            <P>Control</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2.c__company -->
+        <div class=" c__wrapper c__company">
+            <div class="c__title">
+                <h6>welcome</h6>
+                <h2>SEAFOOD COMPANY</h2>
+            </div>
+            <div class="grid wide no-gutters">
+                <div class="c__row row ">
+                    <div class="theme col l-5">
+                        <div class="theme__content-global">
+                            <h2>Our Seafood</h2>
+                            <p>Fish markets range in size from small fish stalls, such as the one in the photo at the right, to the great Tsukiji fish market in Tokyo, turning over about 660,000 tonnes a year. The term can refer to the process.</p>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="image col l-7">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3.sub-slide1 -->
+        <div class="sub-slide1">
+            <div class="slide__text1">
+                <h1>WE OFFER FIRST CLASS SHRIMPS</h1>
+                <P>We guarantee you the best seafood, delivered daily to our dock, prepared to your liking. Our focus is on serving the absolute freshest fish and seafood.</P>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+
+        <!-- 4.our advantages -->
+        <div class=" c__wrapper c__advantages ">
+            <div class="c__title">
+                <h6>about</h6>
+                <h2>OUR ADVANTAGES</h2>
+            </div>
+            <div class="c__adv grid wide">
+                <div class="c__row-adv row">
+                    <div class="col l-3">
+                        <div class="animation">
+                            <img src="./img/content/img6.jpg" alt="">                      
+                            <i class="fa-solid fa-link"></i>
+                        </div>                      
+                        <div class="c__adv-text">
+                            <h5>Responsibly Sourced</h5>
+                            <p>Responsibly-sourced seafood  is the key to  the modern, safe and profitable seafood industry.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3">
+                        <div class="animation">
+                            <img src="./img/content/img7.jpg" alt="">                      
+                            <i class="fa-solid fa-link"></i>
+                        </div>                      
+                        <div class="c__adv-text">
+                            <h5>Environment</h5>
+                            <p>The seafood industry has a concern over climate impact, and takes responsibility in any case.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3">
+                        <div class="animation">
+                            <img src="./img/content/img8.jpg" alt="">                      
+                            <i class="fa-solid fa-link"></i>
+                        </div>                      
+                        <div class="c__adv-text">
+                            <h5>Staff</h5>
+                            <p>Our experts work hard to maintain the quality seafood for our dear customers exclusively.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-3">
+                        <div class="animation">
+                            <img src="./img/content/img9.jpg" alt="">                      
+                            <i class="fa-solid fa-link"></i>
+                        </div>                      
+                        <div class="c__adv-text">
+                            <h5>MarketPlace</h5>
+                            <p>Your business becomes benefitial by providing the customers with the best.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. map -->
+        <div class="c__map">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06241208257!2d-74.30933616806763!3d40.69701926227439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zVGjDoG5oIHBo4buRIE5ldyBZb3JrLCBUaeG7g3UgYmFuZyBOZXcgWW9yaywgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1696957128758!5m2!1svi!2s" ></iframe>
+                <div class="map__content">
+                    <div class="map-text">
+                        <h5>Consider the Source</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <button>view Sourcing map</button>
+                    </div>
+                </div>
+            </div>       
+        </div>
+
+        <!-- 6.service -->
+        <div class=" c__wrapper c__full-service ">
+            <div class="c__title">
+                <h6>out</h6>
+                <h2>full service</h2>
+            </div>
+            <div class="c__service grid wide">
+                <div class="c__service-row row">
+                    <div class="col l-4">
+                        <div class="c__service-col">
+                            <span> 
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                            <div class="c__service-content">
+                                <h6>Global Network</h6>
+                                <p>Learn about our world wide net. Become a partner or a client.</p>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="c__service-col">
+                            <span> 
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            <div class="c__service-content">
+                                <h6>logistics</h6>
+                                <p>One if the most important factors. Always fresh, always in time.</p>
+                            </div>
+                        </div>                        
+                    </div> 
+       
+                    <div class="col l-4">
+                        <div class="c__service-col">
+                            <span> 
+                                <i class="fa-solid fa-warehouse"></i>
+                            </span>
+                            <div class="c__service-content">
+                                <h6>warehouses</h6>
+                                <p>Professional equipment is key. We work to maintain standards.</p>
+                            </div>
+                        </div>                        
+                    </div> 
+                    
+                    <div class="col l-4">
+                        <div class="c__service-col">
+                            <span> 
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <div class="c__service-content">
+                                <h6>certification</h6>
+                                <p>We work with certified employees. We provide top quality food.</p>
+                            </div>
+                        </div>                        
+                    </div> 
+                    
+                    <div class="col l-4">
+                        <div class="c__service-col">
+                            <span> 
+                                <i class="fa-solid fa-snowflake"></i>
+                            </span>
+                            <div class="c__service-content">
+                                <h6>temperature monitoring</h6>
+                                <p>The importance of the right degree for different sea product.</p>
+                            </div>
+                        </div>                        
+                    </div> 
+
+                    <div class="col l-4">
+                        <div class="c__service-col">
+                            <span> 
+                                <i class="fa-solid fa-utensils"></i>
+                            </span>
+                            <div class="c__service-content">
+                                <h6>test kitchens</h6>
+                                <p>Cook our seafood product and see how they prove to be perfect.</p>
+                            </div>
+                        </div>                        
+                    </div>                          
+                </div>
+            </div>
+        </div>
+
+        <!-- 7.sub-slide2 -->
+        <div class="sub-slide2">
+            <div class="slide2__content">
+                <div class="slide2__item">
+                    <span id="varieties">0</span>
+                    <p>VARIETIES OF SHRIMP, MUSSELS, LOBSTER & FINFISH</p>
+                </div>
+                <div class="slide2__item">
+                    <span id="countries">0</span>
+                    <p>COUNTRIES EXPORTED TO AND IMPORTED FROM</p>
+                </div>
+                <div class="slide2__item">
+                    <span id="storage">0</span>
+                    <p>THOUSAND SQ. FEET OF FROZEN STORAGE SPACE</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const varietiesElement = document.getElementById('varieties');
+            const countriesElement = document.getElementById('countries');
+            const storageElement = document.getElementById('storage');
+
+            const targetValues = {
+                varieties: 324,
+                countries: 32,
+                storage: 287
+            };
+
+            let currentValues = {
+                varieties: 0,
+                countries: 0,
+                storage: 0
+            };
+
+            const updateValues = () => {
+                if (currentValues.varieties < targetValues.varieties) {
+                    currentValues.varieties++;
+                }
+                if (currentValues.countries < targetValues.countries) {
+                    currentValues.countries++;
+                }
+                if (currentValues.storage < targetValues.storage) {
+                    currentValues.storage++;
+                }
+
+                varietiesElement.textContent = currentValues.varieties;
+                countriesElement.textContent = currentValues.countries;
+                storageElement.textContent = currentValues.storage;
+            };
+
+            let started = false; // Biến để kiểm tra đã bắt đầu chạy chưa
+
+            const handleScroll = () => {
+                if (!started && isElementInViewport(varietiesElement)) {
+                    // Khi trang web được kéo đến vị trí cần thiết
+                    started = true;
+                    
+                    const interval = 8; // Thời gian cập nhật (milliseconds)
+
+                    const updateInterval = setInterval(() => {
+                        updateValues();
+
+                        // Dừng việc cập nhật khi giá trị đã đạt mục tiêu
+                        if (
+                            currentValues.varieties === targetValues.varieties &&
+                            currentValues.countries === targetValues.countries &&
+                            currentValues.storage === targetValues.storage
+                        ) {
+                            clearInterval(updateInterval);
+                        }
+                    }, interval);
+                }
+            };
+
+            // Kiểm tra xem một phần tử có trong viewport không
+            const isElementInViewport = (element) => {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            };
+
+            // Lắng nghe sự kiện cuộn trang web
+            window.addEventListener('scroll', handleScroll);
+        </script>
+        
+        <!-- 8.product -->
+        <div class=" c__wrapper c__our-products ">
+            <div class="c__title">
+                <h6>seafood</h6>
+                <h2>DISCOVER OUR PRODUCTS</h2>
+            </div>
+            <div class="c__product grid wide">
+                <div class="c__product-row row">
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product1.jpg" alt="">
+                            <span>Tuna</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product2.jpg" alt="">
+                            <span>Snapper</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product3.jpg" alt="">
+                            <span>Shrimp</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product4.jpg" alt="">
+                            <span>Scallops</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product5.jpg" alt="">
+                            <span>Salmon</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product6.jpg" alt="">
+                            <span>Mussels</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product7.jpg" alt="">
+                            <span>Masago</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product8.jpg" alt="">
+                            <span>Lobster</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product9.jpg" alt="">
+                            <span>Crab</span>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-2-4">
+                        <div class="c__product-col">
+                            <img src="./img/content/product10.jpg" alt="">
+                            <span>Clams</span>
+                        </div>                        
+                    </div>                                       
+                </div>             
+            </div>        
+            <button>VIEW MORE PRODUCTS</button>
+        </div>
+
+        <!-- 9.featured -->
+        <div class=" c__wrapper c__featured-items ">
+            <div class="c__title">
+                <h6>products</h6>
+                <h2>featured items</h2>
+            </div>
+            <div class="c__featured grid wide">
+                <div class="c__featured-row row">
+                    <div class="col l-3">
+                        <div class="c__featured-col">
+                            <div class="animation">
+                                <img src="./img/content/featured1.jpg" alt="">
+                                <div class="btn">add to cart</div>
+                            </div>
+                            <div class="c__featured-price">
+                                <h3>Salmon</h3>
+                                <span>$25.00</span>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-3">
+                        <div class="c__featured-col">
+                            <div class="animation">
+                                <img src="./img/content/featured2.jpg" alt="">
+                                <div class="btn">add to cart</div>
+                            </div>
+                            <div class="c__featured-price">
+                                <h3>Tilapia</h3>
+                                <span>$19.00</span>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-3">
+                        <div class="c__featured-col">
+                            <div class="animation">
+                                <img src="./img/content/featured3.jpg" alt="">
+                                <div class="btn">add to cart</div>
+                            </div>
+                            <div class="c__featured-price">
+                                <h3>Shrimp</h3>
+                                <span>$21.00</span>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col l-3">
+                        <div class="c__featured-col">
+                            <div class="animation">
+                                <img src="./img/content/featured4.jpg" alt="">
+                                <div class="btn">add to cart</div>
+                            </div>
+                            <div class="c__featured-price">
+                                <h3>Snapper</h3>
+                                <span>$18.00</span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            <button>SHOP NOW</button>                        
+            </div>
+        </div>
+
+        <!-- 10. recipes -->
+        
+        <div class="c__wrapper c__recipes ">
+            <div class="c__title">
+                <h6>video</h6>
+                <h2>featured recipes</h2>
+            </div>
+            <div class="c__reci-video">
+                <iframe src="https://www.youtube.com/embed/j09k8-WrIkU?si=-iYhsCyxOUfuEjAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="c__reci-decs">
+                <p>Including fish as a regular part of a balanced diet has been shown
+                    to greatly help the symptoms of rheumatoid arthritis.</p>
+                <button>VIEW OUR PORTFOLIO</button>
+            </div>
+        </div>
+
+        <!-- 11.blog -->
+        <div class=" c__wrapper c__blog-news ">
+            <div class="c__title">
+                <h6>blog</h6>
+                <h2>recenter news</h2>
+            </div>
+            <div class="c__blog grid wide">
+                <div class="c__blog-row row">
+                    <div class="col l-4">
+                        <div class="c__blog-col">
+                            <div class="animation">
+                                <img src="./img/content/blog1.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__yep">
+                                <span>May 12, 2016</span>
+                                <h5>Delights of Korean Seafood</h5>
+                                <p>Seafood is a great part of Korean cuisine so you can find a whole aquarium of fishes waiting to be cooked almost in every restaurant of the country.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="c__blog-col">
+                            <div class="animation">
+                                <img src="./img/content/blog2.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__yep">
+                                <span>May 7, 2016</span>
+                                <h5>Partnership Announcement</h5>
+                                <p>We are offering a warm, friendly atmosphere to share a  delicious seafood meal with family and friends at any time of the day or evening.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="c__blog-col">
+                            <div class="animation">
+                                <img src="./img/content/blog3.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__yep">
+                                <span>May 1, 2016</span>
+                                <h5>Seafood Industry</h5>
+                                <p>The demand for seafood is growing. It becomes important for the entire fishing industry to move toward greater transparency and sustainability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+
+        <!-- 12.slide-run -->
+        <div class="c__slide-run">
+            <div class="slide-run-item">
+                <img src="./img/logo/logo2.webp" alt="">
+            </div>
+            <div class="slide-run-item">
+                <img src="./img/logo/logo3.webp" alt="">
+            </div>
+            <div class="slide-run-item">
+                <img src="./img/logo/logo4.webp" alt="">
+            </div>
+            <div class="slide-run-item">
+                <img src="./img/logo/logo5.webp" alt="">
+            </div>
+            <div class="slide-run-item">
+                <img src="./img/logo/logo6.webp" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <!-- start footer -->
+    <div id="footer">
+        <div class="grid wide f__content">
+            <div class="row">
+                <div class="col l-3">
+                    <div class="f__col-img">
+                        <img src="./img/logo/logo7.webp" alt="">
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-aboutus">
+                        <h5>about us</h5>
+                        <p>For the best food, drinks and service you can choose our restaurant. We guarantee you the freshest seafood prepared to your liking.</p>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-links">
+                        <h5>links</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./subWeb/featured/featured.html">Featured</a></li>
+                            <li><a href="./subWeb/recipes/recipes.html">Recipes</a></li>
+                            <li><a href="./subWeb/product/product.html">Products</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-contact">
+                        <h5>contact us</h5>
+                        <p>Call us at <a href="tel:8001234567">(800)-123-4567</a><br>
+                            123 New Lenox, Chicago, IL<br>
+                            <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f__copyright">
+            <p><a href="https://themerex.net/" target="_blank" rel="noopener">ThemeREX</a> © 2023. All rights reserved.</p>
+        </div>
+    </div>
+</body> 
+</html>

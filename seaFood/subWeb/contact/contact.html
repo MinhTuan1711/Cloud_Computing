@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/gird.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <div id="header">
+        <!-- start nav-info -->
+        <div class="nav-info grid wide"> 
+            <div class="row no-gutters">
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>775 Avenue
+                        <br>
+                        Brooklyn, NY
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call us
+                        <br>
+                        (800) 123-4567
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <img src="../img/logo-subweb2.webp" alt="logo">
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Login
+                        <br>
+                        Register
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Your cart
+                        <br>
+                        $0.00
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start nav  -->
+    <div id ="nav">
+        <div class="item">
+            <a href="/index.html">HOME</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/featured/featured.html">FEATURES</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/recipes/recipes.html">RECIPES</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/product/product.html">PRODUCT</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/contact/contact.html">CONTACTS</a>
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+        const initialNavHeight = nav.clientHeight;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > initialNavHeight) {
+                nav.classList.add('theme');
+            } else {
+                nav.classList.remove('theme');
+            }
+        });
+    </script>
+
+    <!-- start slide -->
+    <div id="slide">
+        <div class="slide__text">
+            <h1>contacts</h1>
+        </div>
+    </div>
+
+    <!-- start content -->
+    <div id="content">
+        <div class="item-info">
+            <div class="grid wide">
+                <div class="item-row row">
+                    <div class="col l-4">
+                        <div class="col-item">
+                            <i class="fa-solid fa-house"></i>
+                            <h6>Address</h6>
+                            <span>
+                                6562 Orange Street
+                                <br>                             
+                                Leominster, MA 01453
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="col-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <h6>phone</h6>
+                            <span>
+                                <a href="tel:123456789">+123 456 789</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="col-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h6>email</h6>
+                            <span>
+                                <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- c__message -->
+        <div class=" c__wrapper c__massage">
+            <div class="c__title">
+                <h6>massage</h6>
+                <h2>drop a line</h2>
+            </div>
+            <div class="information">
+                <div class="name-email">
+                    <input type="text" placeholder="Enter your name*">
+                    <input type="email" placeholder="Enter your email*">
+                </div>
+                <div class="massage">
+                    <input type="text" placeholder="Enter your massage*">
+                </div>
+                <button>send massage</button>
+            </div>  
+        </div>
+        <!--  map -->
+        <div class="c__map">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06241208257!2d-74.30933616806763!3d40.69701926227439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zVGjDoG5oIHBo4buRIE5ldyBZb3JrLCBUaeG7g3UgYmFuZyBOZXcgWW9yaywgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1696957128758!5m2!1svi!2s" ></iframe>
+                <div class="map__content">
+                    <div class="map-text">
+                        <h5>Consider the Source</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <button>view Sourcing map</button>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+    
+    <!-- start footer -->
+    <div id="footer">
+        <div class="grid wide f__content">
+            <div class="row">
+                <div class="col l-3">
+                    <div class="f__col-img">
+                        <img src="/subWeb/img/logo-subweb2.webp" alt="">
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-aboutus">
+                        <h5>about us</h5>
+                        <p>For the best food, drinks and service you can choose our restaurant. We guarantee you the freshest seafood prepared to your liking.</p>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-links">
+                        <h5>links</h5>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/subWeb/featured/featured.html">Featured</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="/subWeb/product/product.html">Products</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-contact">
+                        <h5>contact us</h5>
+                        <p>Call us at <a href="tel:8001234567">(800)-123-4567</a><br>
+                            123 New Lenox, Chicago, IL<br>
+                            <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f__copyright">
+            <p><a href="https://themerex.net/" target="_blank" rel="noopener">ThemeREX</a> © 2023. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

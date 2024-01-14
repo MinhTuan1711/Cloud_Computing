@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./recipes.css">
+    <link rel="stylesheet" href="/css/gird.css">
+</head>
+<body>
+    <div id="header">
+        <!-- start nav-info -->
+        <div class="nav-info grid wide"> 
+            <div class="row no-gutters">
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>775 Avenue
+                        <br>
+                        Brooklyn, NY
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call us
+                        <br>
+                        (800) 123-4567
+                    </span>
+                </div>
+                <div class="col l-2-4">
+                    <img src="../img/logo-subweb2.webp" alt="logo">
+                </div>
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Login
+                        <br>
+                        Register
+                    </span>
+                </div>
+
+                <div class="col l-2-4">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Your cart
+                        <br>
+                        $0.00
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start nav  -->
+    <div id ="nav">
+        <div class="item">
+            <a href="/index.html">HOME</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/featured/featured.html">FEATURES</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/recipes/recipes.html">RECIPES</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/product/product.html">PRODUCT</a>
+        </div>
+        <div class="item">
+            <a href="/subWeb/contact/contact.html">CONTACTS</a>
+        </div>
+    </div>
+
+    <script>
+        const nav = document.getElementById('nav');
+        const initialNavHeight = nav.clientHeight;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > initialNavHeight) {
+                nav.classList.add('theme');
+            } else {
+                nav.classList.remove('theme');
+            }
+        });
+    </script>
+    
+    <!-- start slide -->
+    <div id="slide">
+        <div class="slide__text">
+            <h1>recipes</h1>
+        </div>
+    </div>
+
+
+    <div id="content">
+        <!-- 1.cookbook-->
+        <div class=" c__wrapper c__cookbook">
+            <div class="c__title">
+                <h6>cookbook</h6>
+                <h2>best recipes</h2>
+            </div>
+            <div class="grid wide">
+                <div class="c__cbook-row row ">
+                    <div class="col l-4">
+                        <div class="c__cbook-col">
+                            <div class="animation">
+                                <img src="/subWeb/img/recipes-img1.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__cbook-content">
+                                <h5>Shrimp & Papaya Salad</h5>
+                                <p>Ligt & spicy, delicios seafood salad</p>
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col l-4">
+                        <div class="c__cbook-col">
+                            <div class="animation">
+                                <img src="/subWeb/img/recipes-img2.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__cbook-content">
+                                <h5>Prawn-Stuffed Flatfish</h5>
+                                <p>A brilliantly simple way to jazz up lemon sol</p>
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="c__cbook-col">
+                            <div class="animation">
+                                <img src="/subWeb/img/recipes-img3.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__cbook-content">
+                                <h5>Cajun Fish Steaks</h5>
+                                <p>Blackened fillet coated in bold spices</p>
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="c__cbook-col">
+                            <div class="animation">
+                                <img src="/subWeb/img/recipes-img4.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__cbook-content">
+                                <h5>Prawn & Coconut Curry</h5>
+                                <p>Light Asian creamy snacke, plaice or turbot consectetur adipisicing elit</p>
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="c__cbook-col">
+                            <div class="animation">
+                                <img src="/subWeb/img/recipes-img5.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__cbook-content">
+                                <h5>Grilled Salmon Fillet</h5>
+                                <p>Season salmon fillets with lemon pepper, garlic powder and salt.</p>
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4">
+                        <div class="c__cbook-col">
+                            <div class="animation">
+                                <img src="/subWeb/img/recipes-img6.jpg" alt="">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div class="c__cbook-content">
+                                <h5>Raw Oysters on Half Shell</h5>
+                                <p>A great appetizer, dipped into cucumber mignonette sauce or cocktail sauce.</p>
+                                <button>Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2.video recipes -->
+        <div class="c__wrapper c__recipes ">
+            <div class="c__title">
+                <h6>video</h6>
+                <h2>featured recipes</h2>
+            </div>
+            <div class="c__reci-video">
+                <iframe src="https://www.youtube.com/embed/j09k8-WrIkU?si=-iYhsCyxOUfuEjAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="c__reci-decs">
+                <p>Including fish as a regular part of a balanced diet has been shown
+                    to greatly help the symptoms of rheumatoid arthritis.</p>
+                <button>VIEW OUR PORTFOLIO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- start footer -->
+    <div id="footer">
+        <div class="grid wide f__content">
+            <div class="row">
+                <div class="col l-3">
+                    <div class="f__col-img">
+                        <img src="/subWeb/img/logo-subweb2.webp" alt="">
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-aboutus">
+                        <h5>about us</h5>
+                        <p>For the best food, drinks and service you can choose our restaurant. We guarantee you the freshest seafood prepared to your liking.</p>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-links">
+                        <h5>links</h5>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/subWeb/featured/featured.html">Featured</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="/subWeb/product/product.html">Products</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3">
+                    <div class="f__col-contact">
+                        <h5>contact us</h5>
+                        <p>Call us at <a href="tel:8001234567">(800)-123-4567</a><br>
+                            123 New Lenox, Chicago, IL<br>
+                            <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f__copyright">
+            <p><a href="https://themerex.net/" target="_blank" rel="noopener">ThemeREX</a> © 2023. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

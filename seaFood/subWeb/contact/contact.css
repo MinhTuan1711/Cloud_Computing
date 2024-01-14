@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* #wrapper{
+    width: 1000px;
+} */
+
+/* start nav-info */
+#header{
+    width: 100%;
+    background-color: #2c3941;
+}
+#header .nav-info .col{
+    text-align: center;
+    background-clip: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .nav-info img{
+    width: 100%; 
+    height: 100%;
+    padding: 12px;
+}
+
+#header .nav-info span, i{
+    color: #ccc;
+    text-align: justify;
+    padding-left: 12px;
+}
+
+/* start nav */
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1000;
+    top: 0;
+    height: 70px;
+}
+
+#nav .item a{
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    padding: 24px 40px;
+}
+
+#nav .item:hover a{
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+#nav.theme {
+    background-image: url("/img/content/theme1.jpg");
+    background-color: transparent; 
+    transition:  0.3s ease-in-out; 
+}
+/* start slide */
+#slide{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 30%;
+    background-image: url('/subWeb/img/slide-main.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#slide .slide__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/* start content */
+/*.c__wrapper */
+#content .c__wrapper{
+    margin-bottom: 150px;
+}
+
+#content .c__wrapper .c__title{
+    padding: 64px 0;
+    width: 100%;
+    text-align: center;
+}
+#content .c__title h6{
+    color: #bf5025;
+    font-family: Brush Script MT;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+#content .c__title h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+/* 1.item-info */
+#content .item-row{
+    margin-top:100px;
+}
+#content .col-item {
+    width: 100%;
+    height: 200px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+#content .col-item i{
+    color: #8bb4cd;
+    font-size: 32px;
+    padding: 32px 0 24px;
+}
+
+#content .col-item h6{
+    color: #2c3941;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 12px;
+}
+#content .col-item span{
+    font-size: 12px;
+    color: #959ca0;
+    line-height: 1.6;
+}
+
+#content .col-item a{
+    color: #959ca0;
+    text-decoration: none;
+}
+#content .col-item a:hover{
+    color: #8bb4cd;
+}
+
+/* 2.c__massage */
+#content .information{
+    margin: 0 30%;
+    position: relative;
+}
+
+#content .information input{
+    border: 2px solid #e4e7e8;
+    color: #959ca0;;
+}
+#content .information input:hover{
+    border: 2px solid #8bb4cd;
+    transition: all 0.3s ease-in-out;
+
+}
+#content .name-email input{
+    width : 49%;
+    height: 42px;
+    padding-left: 12px;
+}
+
+#content .massage input{
+    width: 100%;
+    height: 200px;
+    padding-left: 12px;
+    padding-bottom: 30%;
+}
+#content .name-email{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 12px;
+}
+
+::placeholder { 
+    color: #959ca0;
+    font-size: 12px;
+    opacity: 0.8;
+    cursor: auto;
+  }
+
+#content .information button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 24px;
+    padding: 14px;
+    width: 40%;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    background-color: #2c3941;
+    font-size: 14px;
+}
+#content .information button:hover{
+    background-color: #8bb4cd;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+/* map */
+#content .map{
+    position: relative;
+}
+#content .c__map iframe{
+    width: 100%;
+    height:400px;
+    border: none;
+}
+
+#content .c__map .map__content{
+    position: absolute;
+    background-image: url('/img/content/theme1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 400px;
+    right: 15%;
+    top: 0;
+}
+
+#content .c__map .map__content{
+    padding: 64px;
+    color: #fff;
+    line-height: 24px;
+}
+
+#content .c__map h5{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#content .c__map p{
+    font-size:16px;
+    font-weight: 400;
+    margin: 32px 0;
+    color: #e3e6ea;
+}
+
+#content .c__map button{
+    padding: 16px;
+    width: 70%;
+    color: #8cb4cd;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#content .c__map button:hover{
+    color: #fff;
+    background-color: #8cb4cd;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+/* start footer */
+#footer{
+    width: 100%;
+    height: 350px;
+    background-color: #2c3941;
+}
+
+#footer .f__content{
+    padding-top: 5%;
+    color: #959ca0;
+}
+#footer .f__col-img{
+    margin-top: 24px;
+}
+#footer .f__content h5{
+    color: #fff;
+    text-transform:uppercase;
+    font-size:16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+#footer .f__content p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+#footer .f__content a{
+    text-decoration: none;
+    color: #959ca0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+#footer .f__content a:hover{
+    color: #fff;
+}
+
+#footer .f__col-contact a{
+    color:#8bb4cd;
+}
+
+#footer .f__col-contact a:hover{
+    color: #bf5025;
+}
+
+#footer .f__col-links{
+    margin-left: 35%;
+}
+#footer .f__copyright p{
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 14px;
+    color: #959ca0;
+    letter-spacing: 0.5px;
+}
+
+#footer .f__copyright p>a{
+    color: #8bb4cd;
+}
+#footer .f__copyright p>a:hover{
+    color: #bf5025;
+}
